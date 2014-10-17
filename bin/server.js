@@ -16,7 +16,7 @@ var mode = function(arg){
       case  "dev":
           return "../src";
       case "prod":
-          return "../dest";
+          return "../dist";
       default:
           console.log("You must supply a mode!");
   }
@@ -109,6 +109,8 @@ router.delete('/api/todos/:id', function(req, res){
         });
     });
 });
+
+app.use('/', router);
 
 var port = 4711;
 app.listen(port, function(){
