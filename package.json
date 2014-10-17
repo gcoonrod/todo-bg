@@ -1,0 +1,26 @@
+{
+  "name": "todo_bg",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "backbone": "^1.1.2",
+    "body-parser": "^1.9.0",
+    "errorhandler": "^1.2.2",
+    "express": "^4.9.7",
+    "jquery": "^2.1.1",
+    "method-override": "^2.3.0",
+    "mongoose": "^3.8.17",
+    "path": "^0.4.9",
+    "underscore": "^1.7.0"
+  },
+  "devDependencies": {
+    "browserify": "^6.1.0",
+    "gulp": "^3.8.8"
+  }
+}
