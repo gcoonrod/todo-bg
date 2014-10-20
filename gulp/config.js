@@ -14,6 +14,11 @@ module.exports = {
             dest + '/**'
         ]
     },
+    tests: {
+        src: "./test/spec/**/*Spec.js",
+        dest: dest + "/js",
+        bundle: "tests.js"
+    },
     server: {
         script: './bin/server.js',
         ext: 'js html',
