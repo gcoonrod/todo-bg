@@ -63,6 +63,7 @@ module.exports = Backbone.View.extend({
     addOne: function (todo) {
         var view = new TodoView({model: todo});
         $('#todo-list').append(view.render().el);
+        console.log("New Todo Added");
     },
 
     addAll: function () {

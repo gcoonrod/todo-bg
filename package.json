@@ -23,7 +23,19 @@
     "underscore": "^1.7.0"
   },
   "devDependencies": {
+    "browser-sync": "^1.5.8",
     "browserify": "^6.1.0",
-    "gulp": "^3.8.8"
+    "browserify-shim": "^3.8.0",
+    "gulp": "^3.8.8",
+    "gulp-changed": "^1.0.0",
+    "gulp-imagemin": "^1.1.0",
+    "gulp-minify-css": "^0.3.11",
+    "gulp-nodemon": "^1.0.4",
+    "gulp-notify": "^2.0.0",
+    "gulp-util": "^3.0.1",
+    "pretty-hrtime": "^0.2.2",
+    "require-dir": "^0.1.0",
+    "vinyl-source-stream": "^1.0.0",
+    "watchify": "^2.0.0"
   }
 }

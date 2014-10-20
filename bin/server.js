@@ -18,7 +18,7 @@ var mode = function(arg){
       case "prod":
           return "../dist";
       default:
-          console.log("You must supply a mode!");
+          return "../dist";
   }
 };
 

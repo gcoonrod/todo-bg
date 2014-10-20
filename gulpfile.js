@@ -1,47 +1,20 @@
 /**
  * Created by coonrod on 10/17/14.
  */
-var gulp = require('gulp');
+/*
+ gulpfile.js
+ ===========
+ Rather than manage one giant configuration file responsible
+ for creating multiple tasks, each task has been broken out into
+ its own file in gulp/tasks. Any files in that directory get
+ automatically required below.
 
-var paths = {
-    dev_infrastructure: [
-        'node_modules/jquery/dist/jquery.js',
-        'node_modules/backbone/backbone.js',
-        'node_modules/underscore/underscore.js',
-        'node_modules/todomvc-common/base.js'
-    ],
-    prod_infrastructure: [
-        'node_modules/jquery/dist/jquery.min.js',
-        'node_modules/backbone/backbone-min.js',
-        'node_modules/underscore/underscore-min.js'
-    ],
-    scripts: [
-        'src/js/**/*.js'
-    ],
-    images: [
-        'src/img/*'
-    ],
-    css: [
-        'src/css/*.css',
-        'node_modules/todomvc-common/*.css'
-    ],
-    dist: [
-        'dist/'
-    ],
-    src: [
-        'src/'
-    ]
-};
+ To add a new task, simply add a new task file that directory.
+ gulp/tasks/default.js specifies the default set of tasks to run
+ when you run `gulp`.
+ */
 
-gulp.task('copy-dev-infra', function(){
-    gulp.src(paths.dev_infrastructure)
-        .pipe(gulp.dest('src/lib/'));
-});
+var requireDir = require('require-dir');
 
-gulp.task('copy-prod-deps', function(){
-    gulp.src(paths.images)
-        .pipe(gulp.dest('dist/img'));
-
-    gulp.src(paths.css)
-        .pipe(gulp.dest('dist/css'));
-});
+// Require all tasks in gulp/tasks, including subfolders
+requireDir('./gulp/tasks', { recurse: true });
