@@ -1,2 +1,2 @@
-# TODO-BG ![BuildStatus](https://travis-ci.org/gcoonrod/todo-bg.svg?branch=master) ![Dependencies](https://david-dm.org/gcoonrod/todo-bg.png) ![devDependencies](https://david-dm.org/gcoonrod/todo-bg#info=devDependencies)
+# TODO-BG ![BuildStatus](https://travis-ci.org/gcoonrod/todo-bg.svg?branch=master) ![Dependencies](https://david-dm.org/gcoonrod/todo-bg.png) [![devDependency Status](https://david-dm.org/gcoonrod/todo-bg/dev-status.svg)](https://david-dm.org/gcoonrod/todo-bg#info=devDependencies)
 Fork of the [TodoMVC](todomvc.com) project that incorporates TravisCI, Gulp, Browserify, and Karma/Jasmine unit tests.
